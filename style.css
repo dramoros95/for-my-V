@@ -4,70 +4,75 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
-    font-family: 'Comic Sans MS', 'Cursive', sans-serif;
+    background: linear-gradient(135deg, #fff5f8 0%, #fce4ec 100%);
+    /* Quicksand is soft and rounded */
+    font-family: 'Quicksand', sans-serif; 
     overflow: hidden;
 }
 
 .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.8);
     padding: 40px;
-    border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    backdrop-filter: blur(5px);
-    z-index: 1;
+    border-radius: 40px;
+    box-shadow: 0 15px 35px rgba(255, 182, 193, 0.4);
+    z-index: 10;
+    border: 4px solid #fff;
 }
 
 .gif-container img {
-    width: 200px;
+    width: 220px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 h1 {
+    /* Dancing Script looks like handwriting */
+    font-family: 'Dancing Script', cursive;
     color: #d81b60;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px white;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
 
 button {
     padding: 15px 35px;
     font-size: 1.2rem;
-    margin: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-    font-weight: bold;
+    transition: transform 0.2s;
 }
 
 #yesBtn {
     background-color: #ff4081;
     color: white;
-    box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4);
-}
-
-#yesBtn:hover {
-    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(255, 64, 129, 0.3);
 }
 
 #noBtn {
-    background-color: #ffffff;
-    color: #ad1457;
-}
-
-/* Floating Hearts Animation */
-@keyframes heartFloat {
-    0% { transform: translateY(100vh) Math.random(); opacity: 1; }
-    100% { transform: translateY(-10vh); opacity: 0; }
+    background-color: #fce4ec;
+    color: #d81b60;
+    border: 2px solid #d81b60;
 }
 
 .heart {
     position: absolute;
-    color: #ff80ab;
-    font-size: 20px;
-    user-select: none;
+    color: #ffb2cc;
+    font-size: 25px;
     animation: heartFloat 5s linear infinite;
-    z-index: 0;
+    z-index: 1;
+}
+
+@keyframes heartFloat {
+    0% { transform: translateY(110vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
 }
