@@ -14,7 +14,7 @@ noBtn.addEventListener('mouseover', () => {
 
 // Success Event
 yesBtn.addEventListener('click', () => {
-    question.innerHTML = "Yay! See you on the 14th! ❤️🌸";
+    question.innerHTML = "Yay! Love Youuu! ❤️🌸";
     
     // Change to a happy bear gif
     mainGif.src = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpueG56ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/lTQF0ODLLJHzaOBCFy/giphy.gif";
