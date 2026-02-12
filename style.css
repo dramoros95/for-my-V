@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffebee;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+.container { text-align: center; }
+h1 { color: #d32f2f; }
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#yesBtn { background-color: #ff5252; color: white; }
+#noBtn { background-color: #9e9e9e; color: white; }
